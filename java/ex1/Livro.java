@@ -37,7 +37,13 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro: " + titulo + " | Autor: " + autor + " | Disponivel: " +
-            disponivel;
+        String tituloFmt = this.titulo.length() > 28 ?
+            this.titulo.substring(0, 25) + "..." : this.titulo;
+        String autorFmt = this.autor.length() > 12 ?
+            this.autor.substring(0, 9) + "..." : this.autor;
+        String disponivelFmt = this.disponivel ? "Sim" : "Não";
+
+        return String.format("Livro: %-28s | Autor: %-12s | Disponível: %-3s",
+                tituloFmt, autorFmt, disponivelFmt);
     }
 }
