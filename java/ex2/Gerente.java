@@ -22,7 +22,7 @@ public class Gerente extends Funcionario {
 
     @Override
     public String toString() {
-        return String.format("%s\nCargo: Gerente\nEquipe: %d pessoas\n",
+        return String.format("%sCargo: Gerente\nEquipe: %d pessoas\n",
                 super.toString(), this.tamanhoEquipe);
     }
 }

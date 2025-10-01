@@ -22,7 +22,7 @@ public class Desenvolvedor extends Funcionario {
 
     @Override
     public String toString() {
-        return String.format("%s\nCargo: Desenvolvedor\nLinguagem: %s\n",
+        return String.format("%sCargo: Desenvolvedor\nLinguagem: %s\n",
                 super.toString(), this.linguagem);
     }
 }

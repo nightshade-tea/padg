@@ -25,7 +25,7 @@ public abstract class Funcionario {
 
     @Override
     public String toString() {
-        return String.format("Nome: %s\nMatrícula: %s\nSalário: %s\n",
+        return String.format("Nome: %s\nMatrícula: %s\nSalário: R$ %.2f\n",
                 this.nome, this.matricula, this.calcularSalario());
     }
 }

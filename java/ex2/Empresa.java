@@ -22,6 +22,7 @@ public class Empresa {
     public void listarFuncionarios() {
         Iterator<Funcionario> i = this.funcionarios.iterator();
 
+        System.out.println("=".repeat(31));
         System.out.println("=== Funcionários da empresa ===");
 
         while ( i.hasNext() ) {
